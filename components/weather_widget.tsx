@@ -106,14 +106,14 @@ export default function WeatherWidget(){
     return (                 //horizontal   //vertical
         <div className="flex justify-center items-center h-screen bg-zinc-800 shadow-red-950">
             <Card className="w-full max-w-md mx-auto text-center bg-slate-600 shadow-red-950">
-                <CardHeader className="">
+                <CardHeader>
                     <CardTitle className="text-red-900">Weather Widget</CardTitle>
                     <CardDescription>Search For The Current Weather Condition In Your City</CardDescription>
                 </CardHeader>
                 <CardContent>
                 <form onSubmit={handleSearch} className="flex items-center gap-2 shadow-red-950">
-                    <Input 
-                    className="bg-teal-900"
+                    <Input
+                    className="bg-white-600"
                     type="text"
                     placeholder="Enter a City Name"
                     value={location}
